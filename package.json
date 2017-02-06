@@ -42,7 +42,20 @@
     "cp-file": "cli.js",
     "cp-file-cli": "cli.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "command",
+    "copy",
+    "copying",
+    "cp",
+    "cp-file",
+    "cpy",
+    "file",
+    "files",
+    "line",
+    "util",
+    "utility"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
