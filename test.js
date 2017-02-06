@@ -9,8 +9,21 @@
 
 'use strict'
 
+const execa = require('execa')
 const test = require('mukla')
 
-test('cp-file-cli', (done) => {
-  done()
+test('should fail if not enough arguments', (done) => {
+  return execa('node', ['./cli.js']).catch((err) => {
+    test.ok(/CpFileError: `src` and `dest` required/.test(err.message))
+    done()
+  })
+})
+
+test('should copy single file', (done) => {
+  return execa('node', ['./cli.js', 'LICENSE', 'node_modules/FOO']).then((res) => {
+    test.strictEqual(res.code, 0)
+    test.strictEqual(res.killed, false)
+    test.strictEqual(res.failed, false)
+    done()
+  })
 })
