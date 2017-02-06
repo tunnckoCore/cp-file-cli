@@ -1,6 +1,6 @@
 {
   "name": "cp-file-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Command line tool for copying single file, using [cp-file][] under the hood. Just because cpy-cli is too much and does not fit well in the flow.",
   "repository": "tunnckoCore/cp-file-cli",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
